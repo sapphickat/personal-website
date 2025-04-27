@@ -8,6 +8,14 @@
   
 /* melhorar esse rainbow */
 
+#bg-gif {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+  ), url("/xcopy.gif");
+}
+
 @keyframes rainbow {
 0% { color: red; }
 16% { color: orange; }
