@@ -6,6 +6,7 @@
     animation: rainbow 2s linear infinite;
 }
   
+/* melhorar esse rainbow */
 
 @keyframes rainbow {
 0% { color: red; }
@@ -15,4 +16,23 @@
 66% { color: blue; }
 83% { color: indigo; }
 100% { color: violet; }
+}
+
+@utility color-github {
+    color: #FFFFFF; 
+}
+@utility color-instagram {
+    color: #FF0069; 
+}
+@utility color-spotify {
+    color: #1ED760; 
+}
+@utility color-soundcloud {
+    color: #FF5500; 
+}
+@utility color-youtube {
+    color: #FF0000; 
+}
+@utility color-discord {
+    color: #5865F2; 
 }
