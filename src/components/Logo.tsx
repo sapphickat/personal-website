@@ -2,7 +2,6 @@ import { useState } from "react"
 
 export default function Logo({setDefaultColor}: {setDefaultColor: Function}) {
 
-    const bg = document.getElementById('bg-gif')
     const names = [
         'Sxxphxx',
     ]
@@ -17,6 +16,7 @@ export default function Logo({setDefaultColor}: {setDefaultColor: Function}) {
 
         setDefaultColor('text-white')
         console.log(names.length);
+        const bg = document.getElementById('bg-gif')
         if (bg) {
             bg.style.opacity = "1"
         }
@@ -28,8 +28,9 @@ export default function Logo({setDefaultColor}: {setDefaultColor: Function}) {
         document.body.style.backgroundImage = ""
         setDefaultColor('text-neutral-700')
         // e.target.innerHTML = 'Soophia'
+        const bg = document.getElementById('bg-gif')
         if (bg) {
-            bg.style.opacity = "0"
+            bg.style.opacity = "0.1"
         }
     } 
 
