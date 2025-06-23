@@ -12,7 +12,7 @@ import {
 import { ImSoundcloud2 } from "react-icons/im";
 
 const links = [
-    { href: "https://sophia-romantica.tumblr.com", icon: FaTumblr , color: "#36465D", customClass: "rainbow-icon " },
+    { href: "https://sophia-romantica.tumblr.com", icon: FaSquareTumblr, color: "#36465D", customClass: "rainbow-icon " },
     { href: "https://github.com/sxpphickat", icon: FaGithub , color: "#FFFFFF", customClass: "hover:color-github" },
     { href: "https://www.instagram.com/sapphic.kat/", icon: FaInstagram , color: "#FF0069", customClass: "hover:color-instagram" },
     { href: "https://open.spotify.com/user/u008sqwwc8nr9i4gvgn4snjuy", icon: FaSpotify , color: "#1ED760", customClass: "hover:color-spotify" },
