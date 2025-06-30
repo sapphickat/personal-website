@@ -14,25 +14,25 @@ export default function Logo({setDefaultColor}: {setDefaultColor: Function}) {
         //     rgba(0, 0, 0, 0.5)
         //     ), url("/xcopy.gif")`
 
-        setDefaultColor('text-white')
-        console.log(names.length);
-        const bg = document.getElementById('bg-gif')
-        if (bg) {
-            bg.style.opacity = "1"
-        }
+        // setDefaultColor('text-white')
+        // console.log(names.length);
+        // const bg = document.getElementById('bg-gif')
+        // if (bg) {
+        //     bg.style.opacity = "1"
+        // }
         
         // e.target.innerHTML = names[Math.floor(Math.random() * names.length)]
 
     } 
-    const handleMouseLeave = (e: any) => {
-        document.body.style.backgroundImage = ""
-        setDefaultColor('text-neutral-700')
-        // e.target.innerHTML = 'Soophia'
-        const bg = document.getElementById('bg-gif')
-        if (bg) {
-            bg.style.opacity = "0.1"
-        }
-    } 
+    // const handleMouseLeave = (e: any) => {
+    //     document.body.style.backgroundImage = ""
+    //     setDefaultColor('text-neutral-700')
+    //     // e.target.innerHTML = 'Soophia'
+    //     const bg = document.getElementById('bg-gif')
+    //     if (bg) {
+    //         bg.style.opacity = "0.1"
+    //     }
+    // } 
 
 
     return (
@@ -40,8 +40,8 @@ export default function Logo({setDefaultColor}: {setDefaultColor: Function}) {
             <h1
                 className="text-5xl text-white font-mono"
                 id="logo"
-                onMouseOver={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
+                // onMouseOver={handleMouseOver}
+                // onMouseLeave={handleMouseLeave}
             >
                 &gt;_ Sxxphxx
             </h1>

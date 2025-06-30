@@ -23,7 +23,7 @@ const links = [
 
 export default function SocialLinks({defaultColor}: {defaultColor: string}) {
     return (
-        <div className={`flex gap-1 text-2xl ${defaultColor}`}>
+        <div className={`flex gap-2 text-2xl ${defaultColor}`}>
             {links.map(link => (
                 <SocialLink 
                     key={link.href}

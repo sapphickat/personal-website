@@ -7,11 +7,12 @@ import Logo from './components/Logo'
 
 
 function App() {
-  const [defaultColor, setDefaultColor] = useState('text-neutral-700')
+  // const [defaultColor, setDefaultColor] = useState('text-neutral-700')
+  const [defaultColor, setDefaultColor] = useState('text-white')
 
   return (
     <div className='relative overflow-hidden h-screen w-screen'>
-      <div id='bg-gif' className="absolute inset-0 transition-opacity opacity-10 peer-hover:opacity-100 duration-300"></div>
+      <div id='bg-gif' className="absolute inset-0 "></div>
 
       <div className='relative z-10 h-screen w-screen flex flex-col justify-evenly items-center text-white'>
         <div className='peer'>
