@@ -1,0 +1,48 @@
+import { useState } from "react"
+
+export default function Logo({setDefaultColor}) {
+
+    const names = [
+        'Sxxphxx',
+    ]
+
+    const handleMouseOver = (e) => {
+        // document.body.style.backgroundImage = `
+        // linear-gradient(
+        //     to bottom, 
+        //     rgba(255, 0, 0, 0.5), 
+        //     rgba(0, 0, 0, 0.5)
+        //     ), url("/xcopy.gif")`
+
+        // setDefaultColor('text-white')
+        // console.log(names.length);
+        // const bg = document.getElementById('bg-gif')
+        // if (bg) {
+        //     bg.style.opacity = "1"
+        // }
+        
+        // e.target.innerHTML = names[Math.floor(Math.random() * names.length)]
+
+    } 
+    // const handleMouseLeave = (e: any) => {
+    //     document.body.style.backgroundImage = ""
+    //     setDefaultColor('text-neutral-700')
+    //     // e.target.innerHTML = 'Soophia'
+    //     const bg = document.getElementById('bg-gif')
+    //     if (bg) {
+    //         bg.style.opacity = "0.1"
+    //     }
+    // } 
+
+
+    return (
+        <>
+            <h1
+                className="text-5xl text-white font-mono"
+                id="logo"
+            >
+                &gt;_ Sxxphxx
+            </h1>
+        </>
+    )
+}
