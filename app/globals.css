@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: cooperBt;
+  src: url("../styles/cooper-bt-light-italic.otf");
+}
+
+.cooperBt {
+  font-family: "cooperBt", serif;
+}
+
 
 /* .icon-wrapper:hover  */
 .rainbow-icon:hover {
@@ -16,10 +25,11 @@
 ), url("/xcopy.gif");
 } */
 
-.xcopy-bg-gif {
+/* .xcopy-bg-gif {
   background-image: url("/gifs/xcopy.gif");
   filter: brightness(0.8);
 }
+
 
 
 .test-bg-gif {
@@ -61,4 +71,8 @@ display: inline;
 }
 
 
+ */
 
+
+ body {
+ }
