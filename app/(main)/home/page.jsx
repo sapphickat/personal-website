@@ -15,12 +15,12 @@ export default function Home() {
   const [defaultColor, setDefaultColor] = useState('text-white')
 
   return (
-    <div className='h-screen w-screen flex justify-center items-center relative '>
+    <div className=' max-w-[1500px] h-screen w-screen flex justify-center items-center relative '>
       <div className="absolute top-2 right-2">
         <ThemeButton />
       </div>
       <p className={`text-8xl cooperBt`}>
-        asdf<span className="text-2xl">.me</span>
+        Soophia<span className="text-2xl">.me</span>
       </p>
       {/* <NavBar /> */}
         {/* <Card /> */}
