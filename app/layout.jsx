@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import ThemeButton from "@/components/ThemeButton"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +21,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-amber-50 dark:bg-black dark:text-white flex justify-center`}
+          className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-amber-50 dark:bg-neutral-900 dark:text-white flex justify-center`}
       >
+        <div className="fixed -mt-1 w-full p-8 pb-9 flex sm:justify-center justify-around align-center bg-amber-50 dark:bg-neutral-900 dark:shadow-neutral-950 shadow">
+          <div className=" justify-self-center ">
+            <NavBar />
+          </div>
+          <div className="sm:absolute  sm:right-12 ">
+            <ThemeButton />
+          </div>
+        </div>
+        <div className="pt-16">
           {children}
+        </div>
       </body>
     </html>
   );

@@ -16,14 +16,14 @@ export default function ThemeButton() {
     setRewind(new Audio("sound/wind-up-3.mp3"))
 
     
-      // windUp.volume = 0.9
-      // rewind.volume = 0.9
   }, [])
-
-
-
+  
+  
+  
   const toggleDark = () => {
     
+    windUp.volume = 0.6
+    rewind.volume = 0.6
     if (document.body.classList.contains('dark')) {
 
       rewind.currentTime = 0;
@@ -39,7 +39,7 @@ export default function ThemeButton() {
 
 
   return (
-    <div className="text-4xl">
+    <div className="text-3xl">
 
       <InnerMoon duration={800}  onClickCapture={toggleDark} />
 
