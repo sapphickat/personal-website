@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <div>
+        <div className="h-screen">
             blog blog blog
         </div>
     )
