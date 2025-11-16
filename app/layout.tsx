@@ -29,14 +29,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased 
-        dark:text-neutral-400 text-neutral-500  dark:bg-neutral-950 bg-neutral-50 h-screen w-screen
+        dark:text-neutral-400 text-neutral-500  dark:bg-neutral-950 bg-neutral-50 
         `}
       >
         <ThemeProvider>
-          <NavBar />
-
-            {children}
-          <Footer />
+          <div className="grid grid-rows-[max-content_1fr_max-content] h-svh w-svw">
+            <NavBar />
+              {children}
+            <Footer />
+          </div>
         </ThemeProvider>
         
       </body>
