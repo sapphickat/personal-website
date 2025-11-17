@@ -1,7 +1,9 @@
+import SocialLinks from "./ui/SocialLinks";
+
 export default function Page() {
     return (
-        <div className="flex justify-center items-center">
-            contact contact contact
+        <div className="flex p-4 justify-start items-center">
+            <SocialLinks />
         </div>
     )
 }

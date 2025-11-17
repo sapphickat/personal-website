@@ -2,3 +2,25 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+@utility color-github {
+  color: #FFFFFF; 
+}
+@utility color-instagram {
+  color: #FF0069; 
+}
+@utility color-spotify {
+  color: #1ED760; 
+}
+@utility color-soundcloud {
+  color: #FF5500; 
+}
+@utility color-youtube {
+  color: #FF0000; 
+}
+@utility color-discord {
+  color: #5865F2; 
+}
+
+@utility color-tumblr {
+  color: #00B8FF; 
+}
