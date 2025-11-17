@@ -1,7 +1,7 @@
 export default function Page() {
     return (
         <div className="flex justify-center items-center">
-            blog blog blog
+            projects projects projects
         </div>
     )
 }
