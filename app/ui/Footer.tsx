@@ -10,8 +10,8 @@ export default function Footer() {
 
     return (
         <div className="flex justify-center items-center p-8 ">
-            <p className={`${geistMono.variable} font-mono `}>
-                Made with love by <a className="text-sm sm:text-base dark:text-white text-black dark:hover:decoration-white hover:decoration-black transition-colors underline underline-offset-4 dark:decoration-neutral-700 decoration-neutral-300" href="https://github.com/sapphickat">@sapphickat</a>
+            <p className={`${geistMono.variable} font-mono text-xs `}>
+                Made with love by <a className="  dark:text-white text-black dark:hover:decoration-white hover:decoration-black transition-colors underline underline-offset-4 dark:decoration-neutral-700 decoration-neutral-300" href="https://github.com/sapphickat">@sapphickat</a>
             </p>
         </div>
     )
