@@ -10,12 +10,12 @@ import { useTheme } from "next-themes";
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme()
     const [ mounted, setMounted ] = useState(false)
+    const [ mystate, setMystate ] = useState('')
 
     useEffect(() => {
-        setMounted(true)
+        setMystate('trigger')
     })
 
-    if (!mounted) return ;
 
     return (
         <div className="rounded-full border inline-flex p-0.5  border-neutral-300 dark:border-neutral-800 relative  ">
@@ -25,10 +25,10 @@ export default function ThemeToggle() {
                 [<LuComputer />, "system"]
             ] as const).map( ([icon, myTheme]) => {
                 return (
-                    <button 
+                    <button suppressHydrationWarning
                         key={myTheme}
                         onClick={() => setTheme(myTheme)} 
-                        className={`rounded-full p-2 transition-colors ${myTheme === theme ? 'bg-neutral-200 dark:bg-neutral-800' : '' }`}>
+                        className={`${mystate} rounded-full p-2 transition-colors ${myTheme === theme ? 'bg-neutral-200 dark:bg-neutral-800 dark:text-white text-black' : '' }`}>
                         {icon}
                     </button>
                 )
