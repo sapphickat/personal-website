@@ -42,7 +42,7 @@ export default function NavBar() {
                     </Image>
                 </Link>
             </div>
-            <div className="sm:order-2 order-3 p-4 sm:p-8 sm:gap-6 gap-3 grid sm:grid-flow-col sm:justify-end items-center  ">
+            <div className="text-lg sm:order-2 order-3 p-4 sm:p-8 sm:gap-6 gap-3 grid sm:grid-flow-col sm:justify-end items-center  ">
             {links.map((link) => {
                 return (
                     <Link className={pathname === link.href ? 'dark:text-white text-black underline' : ''}

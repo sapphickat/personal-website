@@ -33,7 +33,7 @@ export default function RootLayout({
         `}
       >
         <ThemeProvider>
-          <div className="grid grid-rows-[max-content_1fr_max-content] h-svh w-svw">
+          <div className="grid grid-rows-[max-content_1fr_max-content] h-svh w-svw ">
             <NavBar />
               {children}
             <Footer />
