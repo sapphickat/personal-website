@@ -11,6 +11,7 @@ import {
     FaGithub,
     FaYoutube,
     FaDiscord,
+    FaLinkedin,
 } from "react-icons/fa6";
 import { ImSoundcloud2 } from "react-icons/im";
 
@@ -22,38 +23,39 @@ const links = [
     { href: "https://soundcloud.com/sxpphickat", name: 'Soundcloud', icon: ImSoundcloud2 , color: "#FF5500", customClass: "rounded-md overflow-hidden group-hover:color-soundcloud" },
     { href: "https://www.youtube.com/@soophia-studies", name: 'Youtube', icon: FaYoutube , color: "#FF0000", customClass: "group-hover:color-youtube" },
     { href: "https://discord.com/users/318138449259528194", name: 'Discord', icon: FaDiscord , color: "#5865F2", customClass: "group-hover:color-discord" },
+    { href: "https://www.linkedin.com/in/sophia-pr/", name: 'Linkedin', icon: FaLinkedin , color: "#0077B5", customClass: "group-hover:color-linkedin" },
 ]
 
-export default function SocialLinks({ defaultColor }: { defaultColor: string}) {
+
+export default function socialLinks(name: string) {
+    const link = links.find(link => link.name === name)
+
+    console.log(link)
+    if (!link) return ;
+
     return (
-        <div className={`flex flex-col gap-2 text-2xl ${defaultColor}`}>
-            {links.map(link => (
-                <SocialLink 
-                    key={link.href}
-                    name={link.name}
-                    href={link.href}
-                    icon={link.icon}
-                    color={link.color}
-                    customClass={link.customClass}
-                />
-            ))}
-        </div>
+        <SocialLink 
+        key={link.href}
+        name={link.name}
+        href={link.href}
+        icon={link.icon}
+        color={link.color}
+        customClass={link.customClass}/>
     )
 }
-
 
 function SocialLink({href, icon: Icon, name, color, customClass}: {href: string, icon: IconType, name: string, color: string, customClass: string}) {
     const [isHovered, setIsHovered] = useState(false)
 
     return (
-        <MyLink className={`  group flex gap-0.5  `} href={href} target="_blank" rel="noopener noreferrer">
+        <MyLink className={`text-neutral-600 dark:text-neutral-600 group inline-flex gap-0.5 `} href={href}>
             <span className="flex items-center">
                 <Icon
-                    className={`${customClass} transition-colors duration-300 ease-out inline dark:text-neutral-400  text-neutral-500 `}
+                    className={`${customClass} transition-colors duration-300 ease-out inline dark:text-neutral-300 `}
                 />
             </span>
 
-            <span className=" transition-colors duration-300 ease-out dark:text-neutral-400  text-neutral-500 dark:group-hover:text-white group-hover:text-black">{name}</span>
+            <span className=" transition-colors duration-300 ease-out dark:text-neutral-300 dark:group-hover:text-white group-hover:text-black">{name}</span>
         </MyLink>
     )
 }

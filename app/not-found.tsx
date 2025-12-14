@@ -20,7 +20,9 @@ export default function NotFound() {
                 alt="john travolta meme gif"
             />
             <MyLink 
-                href={'/'}>
+                href={'/'}
+                className=""
+                >
                         Go Back to home page
             </MyLink>
 

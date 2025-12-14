@@ -1,12 +1,10 @@
 import { Suspense } from "react";
+import UnderConstruction from "../ui/UnderConstruction";
 
 export default function Page() {
     return (
         <div className="flex justify-center items-center">
-            gallery gallery gallery
-            <Suspense>
-                dasfasdf
-            </Suspense>
+            <UnderConstruction />
         </div>
     )
 }

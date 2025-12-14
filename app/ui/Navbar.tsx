@@ -6,6 +6,10 @@ import { usePathname } from "next/navigation";
 
 const links = [
     {
+        name: 'Home',
+        href: '/'
+    },
+    {
         name: 'Blog',
         href: '/blog'
     },
@@ -50,7 +54,7 @@ export default function NavBar() {
                 )
             })}
             </div>
-            <div className="sm:order-3 order-2 pt-8 pr-8 justify-self-end">
+            <div className="sm:order-3 order-2 pt-8 pr-4 justify-self-end">
                 <ThemeToggle />
             </div>
         </div>
