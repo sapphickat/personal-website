@@ -1,57 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-@font-face {
-  font-family: cooperBt;
-  src: url("../styles/cooper-bt-light-italic.otf");
-}
-
-.cooperBt {
-  font-family: "cooperBt", serif;
-}
-
-
-/* .icon-wrapper:hover  */
-.rainbow-icon:hover {
-  animation: rainbow 2s linear infinite;
-}
-
-/* melhorar esse rainbow */
-
-/* #bg-gif {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-), url("/xcopy.gif");
-} */
-
-/* .xcopy-bg-gif {
-  background-image: url("/gifs/xcopy.gif");
-  filter: brightness(0.8);
-}
-
-
-
-.test-bg-gif {
-  background-image: url("/gifs/Tumblr_l_59782954736624.gif");
-  filter: brightness(0.8);
-}
-
-#navbar li {
-display: inline;
-}
-
-@keyframes rainbow {
-0% { color: red; }
-16% { color: orange; }
-33% { color: yellow; }
-50% { color: green; }
-66% { color: blue; }
-83% { color: indigo; }
-100% { color: violet; }
-}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @utility color-github {
   color: #FFFFFF; 
@@ -72,9 +21,11 @@ display: inline;
   color: #5865F2; 
 }
 
+@utility color-tumblr {
+  color: #00B8FF; 
+}
 
- */
+@utility color-linkedin {
+  color: #0077B5; 
+}
 
-
- body {
- }
